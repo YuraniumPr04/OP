@@ -1,0 +1,59 @@
+﻿<Window x:Class="WinApp.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinApp"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="300.459" Width="230.521" Foreground="#FFE6C0C0"
+Visibility="Visible" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock x:Name="TB1"  Height="15" Width ="206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,10,0,0" Background="LemonChiffon" FontSize="11">
+
+        </TextBlock>
+        <TextBlock x:Name="TB0"  Height="35" Width ="206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,25,0,0" Background="LemonChiffon" FontSize="21">
+
+        </TextBlock>
+        <Button x:Name="ToMW" Content="До головного вікна" HorizontalAlignment="Left" Margin="5,225,0,0"
+VerticalAlignment="Top" Width="206" Height="30" Click="ToMW_Click"/>
+        <Button  x:Name="B1" Content="1" HorizontalAlignment="Left" Margin="5,97,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B2" Content="2" HorizontalAlignment="Left" Margin="57,97,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B3" Content="3" HorizontalAlignment="Left" Margin="109,97,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B4" Content="4" HorizontalAlignment="Left" Margin="5,129,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B5" Content="5" HorizontalAlignment="Left" Margin="57,129,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B6" Content="6" HorizontalAlignment="Left" Margin="109,129,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B7" Content="7" HorizontalAlignment="Left" Margin="5,161,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B8" Content="8" HorizontalAlignment="Left" Margin="57,161,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="B9" Content="9" HorizontalAlignment="Left" Margin="109,161,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="BSign" Content="-/+" HorizontalAlignment="Left" Margin="5,193,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BSign_Click" />
+        <Button  x:Name="B0" Content="0" HorizontalAlignment="Left" Margin="57,193,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="BPoint" Content="," HorizontalAlignment="Left" Margin="109,193,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BN_Click"/>
+        <Button  x:Name="BPlus" Content="+" HorizontalAlignment="Left" Margin="161,193,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BActSign_Click"/>
+        <Button  x:Name="BMinus" Content="-" HorizontalAlignment="Left" Margin="161,161,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BActSign_Click"/>
+        <Button  x:Name="BMultiply" Content="X" HorizontalAlignment="Left" Margin="161,129,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BActSign_Click"/>
+        <Button  x:Name="BEDivide" Content="/" HorizontalAlignment="Left" Margin="161,97,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BActSign_Click"/>
+        <Button  x:Name="BDelete" Content="del" HorizontalAlignment="Left" Margin="161,65,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BDelete_Click"/>
+        <Button  x:Name="BClear" Content="C" HorizontalAlignment="Left" Margin="109,65,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BClear_Click"/>
+        <Button  x:Name="BEquals" Content="=" HorizontalAlignment="Left" Margin="57,65,0,0"
+VerticalAlignment="Top" Width="50" Height="30" Click="BEquals_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="WinApp.Window1A"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinApp"
+        mc:Ignorable="d"
+        Loaded="Window1A_Loaded"
+        
+        Title="Журнал" Height="220.459" Width="450.521" Foreground="#FFE6C0C0"
+Visibility="Visible" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ComboBox Name="CMB0" HorizontalAlignment="Left" Height="35" Margin="10,10,0,0" FontSize="14" VerticalAlignment="Top" Width="220" IsEditable="True"
+                  SelectionChanged="CMB0_SelectionChanged" GotKeyboardFocus="CMB0_GotKeyboardFocus" LostKeyboardFocus="CMB0_LostKeyboardFocus" MouseEnter="CMB0_MouseEnter" MouseLeave="CMB0_MouseLeave"         >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+                <TextBox x:Name="TB1" HorizontalAlignment="Left" Height="35" Margin="10,51,0,0"
+                                  FontSize="14"
+TextWrapping="Wrap" VerticalAlignment="Top" Width="220" MouseEnter="TB1_MouseEnter" MouseLeave="TB1_MouseLeave" TextChanged="TB1_TextChanged" GotKeyboardFocus="TB1_GotKeyboardFocus" LostKeyboardFocus="TB1_LostKeyboardFocus"/>
+        <TextBox x:Name="TB2" HorizontalAlignment="Left" Height="35" Margin="10,92,0,0"
+                                  FontSize="14"
+TextWrapping="Wrap" VerticalAlignment="Top" Width="220" MouseEnter="TB2_MouseEnter" MouseLeave="TB2_MouseLeave" TextChanged="TB2_TextChanged" GotKeyboardFocus="TB2_GotKeyboardFocus" LostKeyboardFocus="TB2_LostKeyboardFocus"/>
+        <TextBox x:Name="TB3" HorizontalAlignment="Left" Height="35" Margin="10,133,0,0"
+                 FontSize="14"
+TextWrapping="Wrap" VerticalAlignment="Top" Width="220" MouseEnter="TB3_MouseEnter" MouseLeave="TB3_MouseLeave" TextChanged="TB3_TextChanged" GotKeyboardFocus="TB3_GotKeyboardFocus" LostKeyboardFocus="TB3_LostKeyboardFocus"/>
+        <Button x:Name="ReadButton" Content="Додати" HorizontalAlignment="Left" IsEnabled="True"
+Margin="280,10,0,0" VerticalAlignment="Top" Width="150" Height="35" Click="ReadButton_Click"/>
+        <Button x:Name="EditButton" Content="Редагувати" HorizontalAlignment="Left" IsEnabled="False"
+Margin="280,51,0,0" VerticalAlignment="Top" Width="150" Height="35" Click="EditButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Видалити" HorizontalAlignment="Left" IsEnabled="False"
+Margin="280,92,0,0" VerticalAlignment="Top" Width="150" Height="35" Click="DeleteButton_Click"/>
+        <Button x:Name="ToMW" Content="До головного вікна" HorizontalAlignment="Left" Margin="280,133,0,0"
+VerticalAlignment="Top" Width="150" Height="35" Click="ToMW_Click"/>
+    </Grid>
+</Window>
