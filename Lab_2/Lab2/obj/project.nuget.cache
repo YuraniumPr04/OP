@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PiW/9oeFI7P1xp7gQxImBoEz3pNXAN9IdIgYEhSkTK9e8V25RTluYKrcTxv8vmM3pnVcXYP6MTVM84vo+obETg==",
+  "success": true,
+  "projectFilePath": "D:\\1.Yurii Pryimak\\НАВЧАННЯ\\КПІ\\Прога\\Lab2\\Lab2\\Lab2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yurap\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
